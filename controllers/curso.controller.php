@@ -1,21 +1,24 @@
 <?php
 
-//incorporar al modelo
 require_once "../models/curso.php";
 
-//verificar si existe una operación en curso
+//Verificar si existe una operacion en curso
 //GET - POST - REQUEST
-//isset es una funcion que se encarga de verificar si existe una operacón en curso
-if (isset($_POST['operacion'])) {
-  //instancia de la clase curso
-  $curso = new curso();
+if(isset($_POST["operacion"])){
 
-  //identificar la operación : listar, insertar, eliminar, buscar,ect
-  if ($_POST['operacion'] == 'listar'){
-    //utilizaremos el métododefinido en la clase
-    $resultado = $curso->listarcursos();
+  //Instancia de la clase curso
+  $curso = new Curso();
 
-    //enviamos el resultado a la vista como un json
+  //identificar la operacion: listar, insertar, eliminar, buscar, etc.
+  if ($_POST["operacion"] == "listar"){
+
+    //utilizaremos el metodo definido en la clase
+
+    $resultado = $curso->listarCursos();
+
+    //enviamos el resultado a la vista como un JSON
+
     echo json_encode($resultado);
+
   }
 }

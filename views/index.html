@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>Title</title>
@@ -60,11 +60,38 @@
       function mostrarDatos(){
        //comunicación asíncrona/AJAX con el controlador
        $.ajax({
-        
-       }); 
-      }
+         url:  '../controllers/curso.controller.php',
+         type: 'POST',
+         data:  {
+           operacion:'listar'
+         },
+         dataType: 'JSON',
+         success: function(result){
+           if (result.length > 0){
+            //console.log(result);
+            const listaCursos = result;
+            listaCursos.forEach(curso => {
+              let nuevaFila = ``;
+              nuevaFila +=  `<tr>`;
+              nuevaFila +=  `<td>${curso['id']}</td>`;
+              nuevaFila +=  `td>${curso['nombre']}/td>`;
+              nuevaFila +=  `<td>${curso['nivel']}</td>`;
+              nuevaFila +=  `<td>${curso['precio']}</td>`;
+              nuevaFila +=  `<td>${curso['horas']}</td>`;
+              nuevaFila +=  `</tr>`;
+
+              $("#tabla-cursos tbody").append(nuevaFila);
+            });
+          }
+
+         }//fin success
+       }); //fin Ajax
+      }//fin mostrar datos
       //controlamos el botón
+
+      //controlsmod en el botón.
       $("#cargar-datos").click(mostrarDatos);
+
     });
   </script>
 </body>

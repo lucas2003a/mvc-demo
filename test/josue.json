@@ -1,0 +1,38 @@
+{
+  "infopersonal" : {
+    "datos" : {
+      "apellidos" : "Buleje Flores",
+      "nombres" : "Josue",
+      "edad" : 20,
+      "telefono" : "924340839"
+    },
+    "mifamilia" : {
+      "papa" : ["Vicente"],
+      "hermano": ["Leonardo"]
+    }
+  },
+  "formacion" : {
+    "primaria" : ["IEP Mariategui"],
+    "secundaria" : ["IEE JPB"],
+    "superior" : ["SENATI"]
+  },
+  "habilidades" : {
+    "deportivas" : {
+      "futbol" :["Equipo A"]
+      
+      
+    },
+    "sociales":{
+      "intrapersonales": ["autocontrol", "autoestima", "resilecia"],
+      "interpersonales": ["trabajo en equipo", "liderazgo"]
+    },
+    "profesional" : {
+      "programador" : {
+      "lenguajes" : ["PHP", "C++", "Python", "JS", "CSS", "SQL"],
+      "basedatos" : ["MSQL", "MS SQL Server", "Oracle DB", "SQLite"]
+
+      }
+
+    }
+  }
+}

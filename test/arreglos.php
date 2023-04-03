@@ -1,50 +1,43 @@
 <?php
 
-//no va para el proyecto
-//array(arreglo)sencillo. Posee un índice, el primero es 0.
-$pplatos =["Ceviche","Arroz con pollo","Carapulcra","Ají de gallina","Lomo saltado"]//primero
+//Array (arreglo)/coleccion mas sencillo. posee un indice, el primero es 0
+$platos = ["Ceviche", "Arroz con pollo", "Carapulcra", "Aji de gallina", "lomo saltado"]
+
 echo $platos[0];
 echo $platos[1];
 
-$amigos = array("José","Joel","Lorenzo","César");
-echo $amigos[1];//segundo
+$amigos = array("Jose", "Joel", "Lorenzo","Cesar");
+echo $amigos[1];
 
-//Array mutidimensional
+//Array MULTI dimensional
 $aplicaciones = [
-  ["Photoshop","Corel Draw","Premier","Muse"],
-  ["VSCode","Xammp","NeatBeans","Erwin","Notepad++"]
-  ["Excel","SAP","AutoCad","PowerBI","Project"]
+  ["Photoshop", "Corel Draw", "Premier", "Muse"]
+  ["VSCode", "Xampp", "NetBeans", "Erwin", "Notepad++"],
+  ["Excel", "SAP", "AutoCAD", "PowerBI", "Project"]
 ];
 
-//obtener VSCode
-echo $aplicaciones[1][0]; //1= índice del arreglo, 0 = índice valor
+//Obtener VSCode
+echo $aplicaciones[1][0]; //1 = indice arreglo, 0 = indice valor
 
-//obtener Muse
-escho $aplicaciones[0][3];
+//Obtener Muse
+echo $aplicaciones[0][3];
 
-//obtener SAP
-echo $aplicaciones [2][1];
-//hasta aquí los arreglos anteriores ,utiizaban indices.
+//Obtener SAP
+echo $aplicaciones[2][1];
 
-//RREGLOS ASOCIATIVOS....KEY =>VALUE 
-$datospersonales =[
-  "apellidos"     =>  "Atuncar Valerio"
-  "nombres"       =>  "Lucas Alfredo"
-  "especialidad"  =>  "Ingenerí de software con IA"
-  "email"         =>  "lucasatuncar1@gmail.com"
-  "edad"          =>  38
-  "estadoCasado"  =>  true,
-  "peliculas"     => ["EndGame","Pinocho","Ironman"]
+//Hasta aqui, cualquier de los arreglos anteriores, utiliza un indice (int)
+//ARREGLOS ASOCIATIVOS...KEY => VALUE
+$datosPersonales = [
+  "apellidos" => "BULEJE FLORES",
+  "nombres"   => "Josue",
+  "especialidad" => "Ingenieria de Software con IA",
+  "email"     => 20,
+  "estaCasado" => true,
+  "peliculas" => ["EndGame, Pinocho, IronMan"]
 ];
 
-//obtener la especialidad
-echo $datospersonales["especialidad"];
+//Obtener la especialidad
+echo $datosPersonales["especialidad"];
 
-//obtener la primera de tus peliculas favortias
-echo $datospersonales["peliculas"][0]
-
-
-
-
-//json
-//// los colegios van con corchetes porque se puede haver estudiado en varios colegios
+//Obtener la primera de tus peliculas favoritas
+echo $datosPersonales["peliculas"][0]
