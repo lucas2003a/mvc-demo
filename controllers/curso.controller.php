@@ -16,9 +16,13 @@ if(isset($_POST["operacion"])){
 
     $resultado = $curso->listarCursos();
 
+    sleep(3);
     //enviamos el resultado a la vista como un JSON
 
     echo json_encode($resultado);
 
+  }
+  if($_POST['operacion'] == 'buscariID'){
+    
   }
 }
