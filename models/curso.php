@@ -1,5 +1,6 @@
 <?php
-
+//Clase = Plantilla =>  nos permite crear objetos| Compone => Atributos,métodos(los metodos se escriben en verbos)
+//Asociativos => Key : value
 class curso{
 
   //atributo
