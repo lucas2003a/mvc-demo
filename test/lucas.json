@@ -1,0 +1,38 @@
+{
+  "infopersonal" : {
+    "datos" : {
+      "apellidos" : "Atuncar Valerio",
+      "nombres"   : "Lucas Alfredo",
+      "edad"      : 19,
+      "telefono"  : "922634773"
+    },
+    "mifamilia" : {
+      "padre"   : "Carlos Atuncar",
+      "madre"   : "María Valerio",
+      "hermanos": ["Carla Atuncar","Piero Atuncar"]
+    }
+  },
+ 
+  "formacion" : {
+    "primaria"    : ["Mi pequeño paraíso","Aurelio Moises Flores Gonzales"],
+    "secundaria"  : ["Jhon F. Kennedy Industrial"],
+    "superior" : ["SENATI"]
+  },
+  "skills" : {
+    "deportivas"  : {
+      "futbol"    : ["Equipo A","Equipo B","Equipo C"]
+    },
+    "sociales"    : {
+      "intrapersonales" : ["autocontrol","autoestima","resiliencia"],
+      "iterpersonales " : ["liderazgo","trabajo en equipo"]
+    },
+    "profesionales" : {
+      "programador" : {
+        "lenguajes": ["PHP","C++","JS","CSS"],
+        "basedatos": ["MY SQL","MY SQL server","Oracle"],
+        "devmovil" : ["ReactNative","Kotlin","Java","Xamari"]
+      },
+      "docente"    : ["Institución 1","Institución 2","SENATI"]
+    }  
+  }
+} 
